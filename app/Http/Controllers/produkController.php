@@ -6,6 +6,8 @@ class produkController extends Controller
 {
     public function index()
     {
-        return 'Mengakses Fungsi di Controller menggunakan route';
+        $produk = 'Botol Minum 1000ml';
+
+        return view('produk/index', compact('produk'));
     }
 }
