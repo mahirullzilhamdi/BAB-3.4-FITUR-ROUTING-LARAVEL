@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\produkController;
+use App\Http\Controllers\MahasiswaController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/welcome', function () {
@@ -48,3 +49,7 @@ Route::get('/create', function () {
 })->name('create');
 
 Route::get('/produk', [produkController::class, 'index']);
+
+Route::get('/produk', [produkController::class, 'index']);
+
+Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
